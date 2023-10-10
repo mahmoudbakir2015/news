@@ -4,7 +4,6 @@ import 'package:news/shared/componnents/componnents.dart';
 import 'package:news/shared/cubit/cubit.dart';
 import 'package:news/shared/cubit/states.dart';
 
-
 class SearchView extends StatelessWidget {
   const SearchView({Key? key}) : super(key: key);
 
