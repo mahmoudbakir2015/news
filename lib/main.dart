@@ -15,13 +15,13 @@ void main() async {
   bool? isLight = await CacheHelper.getData(key: 'isLight');
   DioHelper.init();
   runApp(
-    MyApp(isLight ?? true),
+    MyApp(isLight: isLight ?? true),
   );
 }
 
 class MyApp extends StatelessWidget {
   final bool isLight;
-  const MyApp(this.isLight, {super.key});
+  const MyApp({required this.isLight, super.key});
 
   @override
   build(BuildContext context) {
